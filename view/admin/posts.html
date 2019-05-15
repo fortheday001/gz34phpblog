@@ -46,7 +46,7 @@
           <li><a href="#">下一页</a></li>
         </ul>
       </div>
-      <form onsubmit="return confirm('确定要删除吗？');" method="POST" action="index.php?a=artbdel">
+      <form onsubmit="return confirm('确定要删除吗？');" method="POST" action="<?=IN?>?a=artbdel">
       <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
@@ -71,8 +71,8 @@
             <td class="text-center">2016/10/07</td>
             <td class="text-center">已发布</td>
             <td class="text-center">
-              <a href="index.php?a=artedit&title=<?=$v?>" class="btn btn-default btn-xs">编辑</a>
-              <a onclick="return confirm('确定要删除吗？');" href="index.php?a=artdel&title=<?=$v?>" class="btn btn-danger btn-xs">删除</a>
+              <a href="<?=IN?>?a=artedit&title=<?=$v?>" class="btn btn-default btn-xs">编辑</a>
+              <a onclick="return confirm('确定要删除吗？');" href="<?=IN?>?a=artdel&title=<?=$v?>" class="btn btn-danger btn-xs">删除</a>
             </td>
           </tr>
           <?php endforeach; ?>

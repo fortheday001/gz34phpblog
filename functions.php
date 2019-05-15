@@ -3,6 +3,8 @@
 
 function message($mess, $url)
 {
+    // 在地址上加上入口文件
+    $url = IN . '?a=' . $url;
     echo <<<JS
 <script>
 alert('{$mess}');
@@ -19,7 +21,7 @@ function check_login()
     //  判断 $_SESSION 中有没有一个叫做 name 的键
     if( !isset($_SESSION['name']) )
     {
-        message('必须先登录！', 'index.php?a=login');
+        message('必须先登录！', 'login');
         exit;
     }
 }

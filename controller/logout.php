@@ -4,4 +4,4 @@
 $_SESSION = [];
 
 
-message('退出成功！', 'index.php?a=login');
+message('退出成功！', 'login');

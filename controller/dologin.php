@@ -18,10 +18,10 @@ foreach($account as $v)
         // 3. 账号登录，在 SESSION 中保存 name 做为登录成功的标记
         $_SESSION['name'] = $username;
         // 4. 提示信息
-        message('登录成功！', 'index.php');
+        message('登录成功！', '');
     }
 }
 
-message('登录或者密码错误！', 'index.php?a=login');
+message('登录或者密码错误！', 'login');
 
 

@@ -11,4 +11,4 @@ foreach($title as $v)
 }
 
 // 3. 提示跳转
-message('删除成功！', 'index.php?a=artlist');
+message('删除成功！', 'artlist');
