@@ -29,4 +29,4 @@ if( !in_array($action, $noNeedLogin) )
 }
 
 // 加载要请求的文件
-include('./controller/'.$action . '.php');
+include('./controller/admin/'.$action . '.php');
